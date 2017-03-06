@@ -2,7 +2,7 @@
     -fx-padding: 1em;
     -fx-hgap: .5em;
     -fx-vgap: -fx-hgap;
-    -fx-background-color: gainsboro;
+    -fx-background-color: white;
 }
 
 .tile {

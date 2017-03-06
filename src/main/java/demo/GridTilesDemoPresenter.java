@@ -33,9 +33,9 @@ public class GridTilesDemoPresenter implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        setImageTile(mFish1View, "/fish1.jpg");
-        setImageTile(mFish2View, "/fish2.jpg");
-        setImageTile(mFish3View, "/fish3.jpg");
+        setImageTile(mFish1View, "/fish1.png");
+        setImageTile(mFish2View, "/fish2.png");
+        setImageTile(mFish3View, "/fish3.png");
         setImageTile(mFishGroupView, "/fishgroup.jpg");
     }
 
@@ -48,6 +48,6 @@ public class GridTilesDemoPresenter implements Initializable {
         tile.prefWidthProperty().bind(view.fitWidthProperty());
         tile.prefHeightProperty().bind(view.fitHeightProperty());
         tile.setBackgroundColor(Color.web("#2196F3"));
-        tile.setTitleColor(Color.WHEAT);
+        tile.setTitleColor(Color.WHITE);
     }
 }
