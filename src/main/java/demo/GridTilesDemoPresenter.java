@@ -2,19 +2,17 @@ package demo;
 
 import eu.hansolo.tilesfx.Tile;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 
-import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
  * Created by smac89 on 05/03/17.
  */
 
-public class GridTilesDemoPresenter implements Initializable {
+public class GridTilesDemoPresenter {
 
     @FXML // fx:id="mRoot"
     private GridPane mRoot; // Value injected by FXMLLoader
@@ -31,8 +29,10 @@ public class GridTilesDemoPresenter implements Initializable {
     @FXML // fx:id="mFishGroupView"
     private Tile mFishGroupView; // Value injected by FXMLLoader
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    @FXML
+    private ResourceBundle resources;
+
+    public void initialize() {
         setImageTile(mFish1View, "/fish1.png");
         setImageTile(mFish2View, "/fish2.png");
         setImageTile(mFish3View, "/fish3.png");
