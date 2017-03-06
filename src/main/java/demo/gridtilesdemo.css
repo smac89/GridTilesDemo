@@ -1,0 +1,10 @@
+.root {
+    -fx-padding: 1em;
+    -fx-hgap: .5em;
+    -fx-vgap: -fx-hgap;
+    -fx-background-color: gainsboro;
+}
+
+.tile {
+    /*-fx-padding: .5em; /* <-- this throws an exception when used */
+}
